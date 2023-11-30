@@ -4,7 +4,7 @@ const app = express();
 const { authenticateToken } = require("./middlewares/Auth");
 
 if(process.env.NODE_ENV!=='production')
-require("dotenv").config({path:"./config/config.env"});
+require("dotenv").config({path:"./config/.env"});
 
 
 //middlewares
